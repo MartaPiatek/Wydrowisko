@@ -1,10 +1,9 @@
 @font-face {
   font-family: 'jezioro';
-    font-style: normal;
+  font-style: normal;
   font-weight: normal;
   src: url('czcionki/czcionka_www_jezioro.eot');
   src: url('czcionki/czcionka_www_jezioro.eot?#iefix') format('embedded-opentype'), url('czcionki/czcionka_www_jezioro.woff') format('woof'), url('czcionki/czcionka_www_jezioro.ttf') format('truetype'), url('czcionki/czcionka_www_jezioro.svg#jezioro') format('svg');
-
 }
 
 body {
@@ -32,12 +31,16 @@ a {
 .element-listy {
   border: 1px solid rgb(100%, 100%, 100%);
   border: 1px solid rgba(100%, 100%, 100%, 0.8);
-  display: block;
+  display: inline-block;
+  width: 120px;
 }
 
 .lista-miniatur {
-  list-style: none;
+list-style: none;
+overflow-x: auto;
   padding: 0;
+  white-space: nowrap;
+
 }
 
 .obraz-miniatury {
@@ -51,4 +54,8 @@ a {
   font-size: 37px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.duzy-obraz {
+  width: 90%;
 }
