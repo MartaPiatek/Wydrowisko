@@ -109,6 +109,19 @@ a {
   text-align: center;
 }
 
+.ukryty-duzy-obraz .kontener-duzego-obrazu {
+  display: none;
+}
+
+.ukryty-duzy-obraz .lista-miniatur{
+  align-items: center;
+  flex-direction: column;
+}
+
+.ukryty-duzy-obraz .element-listy{
+  max-width: 80%;
+}
+
 @media all and (min-width: 768px) {
   .glowna-tresc{
     flex-direction: row;
