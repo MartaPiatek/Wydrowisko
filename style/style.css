@@ -44,6 +44,11 @@ a {
   display: inline-block;
   min-width: 120px;
   max-width: 120px;
+  transition: transform 133ms ease-in-out;
+}
+
+.element-listy:hover {
+  transform: scale(1.2);
 }
 
 .lista-miniatur {
@@ -53,7 +58,7 @@ a {
   list-style: none;
   order: 2;
   overflow-x: auto;
-  padding: 0;
+  padding: 20px 0;
   white-space: nowrap;
 }
 
@@ -94,6 +99,12 @@ a {
 .ramka-duzego-obrazu {
   position: relative;
   text-align: center;
+  transition: transform 333ms;
+}
+
+.bardzo-maly-obraz{
+  transform: scale(0.001);
+  transition: transform 0ms;
 }
 
 .tytul-duzego-obrazu {
@@ -105,7 +116,8 @@ a {
   position: absolute;
   text-shadow: rgba(0, 0, 0, 0.9) 1px 2px 9px;
 }
-.stopka{
+
+.stopka {
   text-align: center;
 }
 
@@ -113,29 +125,30 @@ a {
   display: none;
 }
 
-.ukryty-duzy-obraz .lista-miniatur{
+.ukryty-duzy-obraz .lista-miniatur {
   align-items: center;
   flex-direction: column;
 }
 
-.ukryty-duzy-obraz .element-listy{
+.ukryty-duzy-obraz .element-listy {
   max-width: 80%;
 }
 
 @media all and (min-width: 768px) {
-  .glowna-tresc{
+  .glowna-tresc {
     flex-direction: row;
     overflow: hidden;
   }
-  .lista-miniatur{
+  .lista-miniatur {
     flex-direction: column;
     margin-left: 20px;
-      order: 0;
+    order: 0;
+    padding: 0 35px;
   }
-  .element-listy{
+  .element-listy {
     max-width: 260px;
   }
-.element-listy+.element-listy{
-  margin-top: 20px;
-}
+  .element-listy+.element-listy {
+    margin-top: 20px;
+  }
 }
